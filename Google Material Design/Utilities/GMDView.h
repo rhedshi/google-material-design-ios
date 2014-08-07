@@ -8,9 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
+#import "GMDShadowLayer.h"
+
 @interface GMDView : UIView
 
-@property (nonatomic) NSUInteger z;
+@property (nonatomic) GMDShadowLayer *layer;
 
 - (id)initWithFrame:(CGRect)frame z:(NSUInteger)z;
 

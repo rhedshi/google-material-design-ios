@@ -21,17 +21,6 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
-}
-
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
-- (void)viewWillAppear:(BOOL)animated
-{
-    [super viewWillAppear:animated];
     
     self.view.backgroundColor = [UIColor colorWithWhite:230.0/255 alpha:1];
     
@@ -40,6 +29,15 @@
         gmd.backgroundColor = [UIColor whiteColor];
         [self.view addSubview:gmd];
     }
+    
+    GMDView *gmd = [[GMDView alloc] initWithFrame:CGRectMake(25, 225, 100, 100)];
+    gmd.backgroundColor = [UIColor GMDRedColor500];
+    [self.view addSubview:gmd];
+    
+    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(150, 225, 50, 20)];
+    label.font = [UIFont fontWithName:@"Roboto" size:14];
+    label.text = @"Roboto";
+    [self.view addSubview:label];
 }
 
 @end
