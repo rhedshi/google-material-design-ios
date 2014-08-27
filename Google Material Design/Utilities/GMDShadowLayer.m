@@ -60,8 +60,17 @@
             break;
             
         default:
+            layer.shadowColor = [UIColor blackColor].CGColor;
+            layer.shadowOffset = CGSizeZero;
+            layer.shadowOpacity = 0;
+            layer.shadowRadius = 0;
             break;
     }
+}
+
+- (BOOL)masksToBounds
+{
+    return NO;
 }
 
 @end

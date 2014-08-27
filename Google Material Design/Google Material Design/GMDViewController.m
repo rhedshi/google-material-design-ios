@@ -9,9 +9,12 @@
 #import "GMDViewController.h"
 
 #import "GMDView.h"
+#import "GMDFloatActionButton.h"
 #import "UIColor+GMD.h"
 
 @interface GMDViewController ()
+
+@property (weak, nonatomic) IBOutlet GMDFloatActionButton *storyboardFAB;
 
 @end
 
@@ -38,6 +41,32 @@
     label.font = [UIFont fontWithName:@"Roboto" size:14];
     label.text = @"Roboto";
     [self.view addSubview:label];
+    
+    GMDFloatActionButton *button = [[GMDFloatActionButton alloc] initWithImage:[UIImage imageNamed:@"grey-check"] miniSize:NO];
+    button.backgroundColor = [UIColor GMDIndigoColorA100];
+    
+    GMDFloatActionButton *miniButton = [[GMDFloatActionButton alloc] initWithImage:[UIImage imageNamed:@"grey-check"] miniSize:YES];
+    miniButton.backgroundColor = [UIColor GMDIndigoColorA100];
+    
+    NSLog(@"************");
+    button.frame = CGRectMake(150, 300, 0, 0);
+    NSLog(@"------------");
+    miniButton.frame = CGRectMake(225, 300, 0, 0);
+    
+    [self.view addSubview:button];
+    [self.view addSubview:miniButton];
+    
+    
+    GMDFloatActionButton *background = [[GMDFloatActionButton alloc] initWithImage:[UIImage imageNamed:@"grey-check"] miniSize:NO];
+    background.frame = CGRectMake(300, 300, 0, 0);
+    
+    [self.view addSubview:background];
+}
+
+- (void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+    NSLog(@"%@", NSStringFromCGRect(self.storyboardFAB.frame));
 }
 
 @end
