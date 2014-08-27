@@ -49,6 +49,7 @@
 		4DEC7B4419934F7000D9380C /* GMDButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DEC7B4319934F7000D9380C /* GMDButton.m */; };
 		4DEC7B471993519300D9380C /* GMDFloatActionButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DEC7B461993519300D9380C /* GMDFloatActionButton.m */; };
 		4DFD2D091994975600154617 /* grey-check.png in Resources */ = {isa = PBXBuildFile; fileRef = 4DFD2D081994975600154617 /* grey-check.png */; };
+		4DFD2D6F19ADDDE500154617 /* GMDCard.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DFD2D6E19ADDDE500154617 /* GMDCard.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -115,6 +116,8 @@
 		4DEC7B451993519300D9380C /* GMDFloatActionButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMDFloatActionButton.h; sourceTree = "<group>"; };
 		4DEC7B461993519300D9380C /* GMDFloatActionButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GMDFloatActionButton.m; sourceTree = "<group>"; };
 		4DFD2D081994975600154617 /* grey-check.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "grey-check.png"; sourceTree = "<group>"; };
+		4DFD2D6D19ADDDE500154617 /* GMDCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMDCard.h; sourceTree = "<group>"; };
+		4DFD2D6E19ADDDE500154617 /* GMDCard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GMDCard.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -240,6 +243,8 @@
 				4DEC7B4319934F7000D9380C /* GMDButton.m */,
 				4DEC7B451993519300D9380C /* GMDFloatActionButton.h */,
 				4DEC7B461993519300D9380C /* GMDFloatActionButton.m */,
+				4DFD2D6D19ADDDE500154617 /* GMDCard.h */,
+				4DFD2D6E19ADDDE500154617 /* GMDCard.m */,
 				4DEC7B10198E1C2400D9380C /* GMDShadowLayer.h */,
 				4DEC7B11198E1C2400D9380C /* GMDShadowLayer.m */,
 				4DEC7B16198EDACB00D9380C /* GMDColor-Palette.json */,
@@ -416,6 +421,7 @@
 				4D655F4C1972447E003A3CCB /* UIColor+GMD.m in Sources */,
 				4DEC7B12198E1C2400D9380C /* GMDShadowLayer.m in Sources */,
 				4D900B641967444B009C94B8 /* GMDView.m in Sources */,
+				4DFD2D6F19ADDDE500154617 /* GMDCard.m in Sources */,
 				4DEC7B411993492A00D9380C /* UIFont+GMD.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

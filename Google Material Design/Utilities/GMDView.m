@@ -22,6 +22,7 @@
     self = [super initWithFrame:frame];
     if (self) {
         self.layer.z = z;
+        self.backgroundColor = [UIColor whiteColor];
     }
     return self;
 }

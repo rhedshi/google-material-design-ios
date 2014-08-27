@@ -9,7 +9,10 @@
 #import "GMDViewController.h"
 
 #import "GMDView.h"
+#import "GMDCard.h"
 #import "GMDFloatActionButton.h"
+
+
 #import "UIColor+GMD.h"
 
 @interface GMDViewController ()
@@ -29,7 +32,6 @@
     
     for (int i = 0; i < 5; i++) {
         GMDView *gmd = [[GMDView alloc] initWithFrame:CGRectMake(i * 125 + 25, 100, 100, 100) z:i + 1];
-        gmd.backgroundColor = [UIColor whiteColor];
         [self.view addSubview:gmd];
     }
     
@@ -61,6 +63,9 @@
     background.frame = CGRectMake(300, 300, 0, 0);
     
     [self.view addSubview:background];
+    
+    GMDCard *card = [[GMDCard alloc] initWithFrame:CGRectMake(25, 500, 100, 100)];
+    [self.view addSubview:card];
 }
 
 - (void)viewDidAppear:(BOOL)animated

@@ -42,6 +42,7 @@ static const CGFloat innerSize          = 24.0;
     [self setImageEdgeInsets:UIEdgeInsetsMake(inset, inset, inset, inset)];
     self.layer.cornerRadius = size / 2;
     
+    [self removeConstraints:self.constraints];
     [self setTranslatesAutoresizingMaskIntoConstraints:NO];
     
     self.widthConstraint = [NSLayoutConstraint constraintWithItem:self
