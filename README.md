@@ -1,2 +1,2 @@
-google-material-design_ios
-==========================
+Google Material Design for iOS
+==============================
